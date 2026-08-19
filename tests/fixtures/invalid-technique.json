@@ -1,0 +1,9 @@
+{
+  "id": "Invalid ID",
+  "name": "Broken fixture",
+  "version": "1",
+  "status": "VALIDATED",
+  "domains": [],
+  "saturationScore": 101,
+  "originalityScore": -1
+}

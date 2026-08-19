@@ -1,0 +1,48 @@
+{
+  "id": "fixture.schema-validation",
+  "name": "Schema Validation Fixture",
+  "version": "0.1.0",
+  "status": "DRAFT",
+  "domains": ["CREATIVE_ENGINEERING"],
+  "intent": "Exercise every required contract without entering the accepted technique catalog.",
+  "objectiveMechanics": ["Provide structurally valid test data for automated schema validation."],
+  "triggers": [{"type": "test invocation", "description": "Runs only during the repository test suite."}],
+  "parameters": [{"name": "enabled", "type": "boolean", "description": "Controls the illustrative test state.", "default": true}],
+  "dependencies": [],
+  "implementationType": ["CONCEPTUAL"],
+  "cpuCost": {"level": "NONE", "rationale": "This record describes a validation fixture."},
+  "gpuCost": {"level": "NONE", "rationale": "This record performs no rendering."},
+  "memoryCost": {"level": "LOW", "rationale": "Only a small JSON document is parsed."},
+  "mobileViability": {
+    "rating": "NATIVE",
+    "desktopBehavior": "Validation behavior is platform-independent.",
+    "mobileBehavior": "Validation behavior is platform-independent.",
+    "touchAlternatives": ["No interaction is exposed to a user."],
+    "hoverReplacement": "No hover behavior exists.",
+    "gestureSupport": [],
+    "reducedComplexity": "No visual complexity exists.",
+    "performanceFallback": "Static JSON remains inspectable without runtime presentation."
+  },
+  "accessibility": {
+    "considerations": ["No user interface is produced by this fixture."],
+    "keyboardBehavior": "No keyboard interaction exists.",
+    "screenReaderBehavior": "No rendered output is exposed."
+  },
+  "reducedMotionBehavior": "No motion is produced.",
+  "fallback": {"strategy": "Read the JSON record directly.", "preservesIntent": "The schema contract remains inspectable."},
+  "emotionalCharacter": ["neutral"],
+  "compatibleIndustries": [],
+  "avoidWhen": ["Never treat this fixture as accepted creative knowledge."],
+  "compatibleWith": [],
+  "conflictsWith": [],
+  "saturationScore": 0,
+  "originalityScore": 0,
+  "technicalDifficulty": 1,
+  "performanceTier": {
+    "recommended": "STATIC",
+    "variants": [{"tier": "STATIC", "behavior": "Remain a non-rendered JSON test fixture."}]
+  },
+  "implementationReference": {"kind": "NONE", "location": null, "validationNotes": "Test-only record; no implementation exists."},
+  "sourceObservations": [{"observation": "The fixture was authored solely to exercise the schema contract.", "sourceType": "FIRST_PARTY_TEST", "sourceLocator": "tests/fixtures/valid-technique.json", "observedAt": "2026-08-19"}],
+  "notes": "This is deliberately not a real technique and must never move into techniques/."
+}

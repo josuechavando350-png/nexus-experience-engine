@@ -1,0 +1,17 @@
+{
+  "name": "nexus-experience-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Structured creative knowledge for premium web experiences.",
+  "scripts": {
+    "validate": "node genome/validate.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
